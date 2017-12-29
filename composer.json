@@ -1,0 +1,24 @@
+{
+    "name": "wbits/master-mind",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+
+    "authors": [
+        {
+            "name": "Dick",
+            "email": "info@wbits.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dojo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dojo\\": "tests/"
+        }
+    }
+}
