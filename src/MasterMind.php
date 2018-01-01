@@ -18,10 +18,8 @@ final class MasterMind
         return new self(new Code(...$colors));
     }
 
-    public function guess(string ...$colors): array
+    public function guess(string ...$colors): Answer
     {
-        $answer = $this->secret->compare(new Code(...$colors));
-
-        return $answer->toArray();
+        return $this->secret->compare(new Code(...$colors));
     }
 }
